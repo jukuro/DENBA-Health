@@ -1,0 +1,55 @@
+.purchase-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.purchase-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.purchase-form label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.purchase-form input[type="text"],
+.purchase-form input[type="tel"] {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.purchase-form input[type="text"]:focus,
+.purchase-form input[type="tel"]:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.purchase-form .submit-btn {
+  margin-top: 12px;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-gold), #8B7332);
+}
+
+.purchase-form .submit-btn:hover {
+  filter: brightness(1.1);
+}
+
+.purchase-form input[type="radio"] {
+  accent-color: var(--accent-gold);
+  width: 18px;
+  height: 18px;
+}
